@@ -11,12 +11,11 @@ public class Demo5Application {
 
 		ApplicationContext context = SpringApplication.run(Demo5Application.class, args); // For IOC creation
 
-		 WhatsApp notify =context.getBean(WhatsApp.class);//for DI to the notify obj
-		 WhatsApp notify1 =context.getBean(WhatsApp.class);
-		 notify.printMessage();
-		 notify.wpID=22;
-		 notify1.printMessage();
-		 System.out.println(notify.wpID +" : " + notify1.wpID);
+		 UserControll user =context.getBean(UserControll.class);//for DI to the notify obj
+		 user.print();
+
+
+
 	}
 
 }

@@ -5,11 +5,14 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype") // for achieving different obj creation for same class
+//@Scope("prototype") // for achieving different obj creation for same class
 public class WhatsApp implements Notification{
-     int wpID;
+
     public void printMessage(){
         System.out.println("Hey!! From Wp");
     }
 
+     public String show(){
+        return "hello from wp";
+     }
 }
