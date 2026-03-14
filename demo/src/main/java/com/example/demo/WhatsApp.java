@@ -12,7 +12,4 @@ public class WhatsApp implements Notification{
         System.out.println("Hey!! From Wp");
     }
 
-     public String show(){
-        return "hello from wp";
-     }
 }

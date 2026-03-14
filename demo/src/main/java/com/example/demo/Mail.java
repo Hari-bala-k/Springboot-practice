@@ -1,10 +1,12 @@
 package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 
-
+@Component
+@Primary
 public class Mail implements Notification{
     public void printMessage() {
         System.out.println("hey!! from Mail");

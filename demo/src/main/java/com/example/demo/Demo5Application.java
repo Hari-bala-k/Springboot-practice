@@ -13,9 +13,6 @@ public class Demo5Application {
 
 		 UserControll user =context.getBean(UserControll.class);//for DI to the notify obj
 		 user.print();
-
-
-
 	}
 
 }
