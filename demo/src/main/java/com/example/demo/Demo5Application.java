@@ -11,7 +11,7 @@ public class Demo5Application {
 
 		ApplicationContext context = SpringApplication.run(Demo5Application.class, args); // For IOC creation
 
-		 UserControll user =context.getBean(UserControll.class);//for DI to the notify obj
+		 UserControll user =context.getBean(UserControll.class);//for DI to the user obj
 		 user.print();
 	}
 
